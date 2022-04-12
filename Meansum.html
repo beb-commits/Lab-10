@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mean and Sum Array of Numbers</title>
+</head>
+<body>
+    <p>Here are the numbers in the array: 7, 20, 18, 32, 58 & 47.</p>
+
+    <div id="array">
+        <p>Please click <button onclick="sumArray()">here</button> to see the sum of the numbers</p>
+
+        <p>Click <button onclick="meanArray()">here</button> to see the mean/average of the sum of numbers.</p>
+    </div>
+
+    <script type="text/javascript">
+
+        div = document.getElementById('array')
+        let arrayNums = [7,20,18,32,58,47];
+        let sumNum = 0;
+        function sumArray() {
+        sumNum = 0;
+           for (let i = 0; i < arrayNums.length; i++) {
+            sumNum += arrayNums[i];
+ }
+                alert("The sum of the array of numbers is " + sumNum);
+       }
+   function meanArray() {
+    for (let i = 0; i < arrayNums.length; i++) {
+               sumNum += arrayNums[i];
+ }
+       let mean = sumNum / 6; {
+           alert("The mean of the array of numbers is " + mean);
+       }
+   }
+
+</script>
+</body>
+</html>
